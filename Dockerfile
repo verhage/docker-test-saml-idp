@@ -21,7 +21,7 @@ RUN set -x \
     && rm -rf /tmp/pecl-memcache-php7 php7.zip
 
 # SimpleSAMLphp
-ARG SIMPLESAMLPHP_VERSION=1.15.2
+ARG SIMPLESAMLPHP_VERSION=1.16.3
 RUN curl -s -L -o /tmp/simplesamlphp.tar.gz https://github.com/simplesamlphp/simplesamlphp/releases/download/v$SIMPLESAMLPHP_VERSION/simplesamlphp-$SIMPLESAMLPHP_VERSION.tar.gz && \
     tar xzf /tmp/simplesamlphp.tar.gz -C /tmp && \
     rm -f /tmp/simplesamlphp.tar.gz  && \
